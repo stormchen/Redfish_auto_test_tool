@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bmc-test-automation"
+version = "0.1.0"
+description = "BMC Redfish Automation Test Framework"
+dependencies = [
+    "pytest>=7.0.0",
+    "requests>=2.25.0",
+    "PyYAML>=5.4.0",
+    "jsonschema>=3.2.0",
+    "pytest-html>=3.0.0",
+    "rich>=10.0.0",
+    "weasyprint>=54.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest-cov>=2.12.0",
+]

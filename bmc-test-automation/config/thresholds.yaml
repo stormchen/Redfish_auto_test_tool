@@ -1,0 +1,13 @@
+sensors:
+  - name: "Temperature Sensor 1"
+    type: "Temperature"
+    min: 0
+    max: 80
+    boundary_min: 0
+    boundary_max: 80
+  - name: "Voltage Sensor 1"
+    type: "Voltage"
+    min: 1.0
+    max: 1.5
+    boundary_min: 1.0
+    boundary_max: 1.5
