@@ -1,0 +1,208 @@
+================================================================================
+BMC 感應器測試報告
+================================================================================
+測試時間: 2026-04-22 10:08:25
+BMC URL: https://192.168.100.60
+總感應器數: 50
+================================================================================
+
+[ 1] BPB_FAN_1A
+     讀數: 6150 RPM
+     狀態: OK
+
+[ 2] BPB_FAN_1B
+     讀數: 5550 RPM
+     狀態: OK
+
+[ 3] BPB_FAN_2A
+     讀數: 23550 RPM
+     狀態: OK
+
+[ 4] BPB_FAN_2B
+     讀數: 20700 RPM
+     狀態: OK
+
+[ 5] BPB_FAN_3A
+     讀數: 24000 RPM
+     狀態: OK
+
+[ 6] BPB_FAN_3B
+     讀數: 20700 RPM
+     狀態: OK
+
+[ 7] BPB_FAN_4A
+     讀數: 23850 RPM
+     狀態: OK
+
+[ 8] BPB_FAN_4B
+     讀數: 21000 RPM
+     狀態: OK
+
+[ 9] BPB_FAN_5A
+     讀數: 4800 RPM
+     狀態: OK
+
+[10] BPB_FAN_5B
+     讀數: 4200 RPM
+     狀態: OK
+
+[11] BPB_FAN_6A
+     讀數: 4650 RPM
+     狀態: OK
+
+[12] BPB_FAN_6B
+     讀數: 4200 RPM
+     狀態: OK
+
+[13] BPB_FAN_7A
+     讀數: 4800 RPM
+     狀態: OK
+
+[14] BPB_FAN_7B
+     讀數: 4050 RPM
+     狀態: OK
+
+[15] BPB_FAN_8A
+     讀數: 4800 RPM
+     狀態: OK
+
+[16] BPB_FAN_8B
+     讀數: 4050 RPM
+     狀態: OK
+
+[17] CPU0_DTS
+     讀數: 23 Cel
+     狀態: OK
+
+[18] CPU0_Status
+     讀數: N/A N/A
+     狀態: N/A
+
+[19] CPU0_TEMP
+     讀數: 68 Cel
+     狀態: OK
+
+[20] CPU1_DTS
+     讀數: N/A Cel
+     狀態: N/A
+
+[21] CPU1_Status
+     讀數: N/A N/A
+     狀態: N/A
+
+[22] CPU1_TEMP
+     讀數: N/A Cel
+     狀態: N/A
+
+[23] DIMMG0_TEMP
+     讀數: N/A Cel
+     狀態: N/A
+
+[24] DIMMG1_TEMP
+     讀數: 37 Cel
+     狀態: OK
+
+[25] DIMMG2_TEMP
+     讀數: N/A Cel
+     狀態: N/A
+
+[26] DIMMG3_TEMP
+     讀數: N/A Cel
+     狀態: N/A
+
+[27] GPU_FAN
+     讀數: 8250 RPM
+     狀態: OK
+
+[28] INLET_AIR_TEMP
+     讀數: 29 Cel
+     狀態: OK
+
+[29] MB_TEMP1
+     讀數: 41 Cel
+     狀態: OK
+
+[30] MB_TEMP2
+     讀數: 34 Cel
+     狀態: OK
+
+[31] NVMeG0_TEMP
+     讀數: N/A Cel
+     狀態: N/A
+
+[32] NVMeG1_TEMP
+     讀數: N/A Cel
+     狀態: N/A
+
+[33] P0_EHV_FIVRA_TMP
+     讀數: 45 Cel
+     狀態: OK
+
+[34] P12V
+     讀數: 12.805 V
+     狀態: OK
+
+[35] P12V_S3
+     讀數: 0 A
+     狀態: OK
+
+[36] P1_EHV_FIVRA_TMP
+     讀數: N/A Cel
+     狀態: N/A
+
+[37] P3V3
+     讀數: 3.3124 V
+     狀態: OK
+
+[38] P3V_BAT_R
+     讀數: 3.1058 V
+     狀態: OK
+
+[39] P5V
+     讀數: 5.0629 V
+     狀態: OK
+
+[40] PCH_TEMP
+     讀數: 46 Cel
+     狀態: OK
+
+[41] PS1_Status
+     讀數: 32769 N/A
+     狀態: N/A
+
+[42] PS2_Status
+     讀數: 32905 N/A
+     狀態: N/A
+
+[43] PSU1_HOTSPOT
+     讀數: 41 Cel
+     狀態: OK
+
+[44] PSU2_HOTSPOT
+     讀數: 32 Cel
+     狀態: OK
+
+[45] P_12V_AUX
+     讀數: 12.74 V
+     狀態: OK
+
+[46] P_1V05_PCH
+     讀數: 1.07 V
+     狀態: OK
+
+[47] P_1V8_PCH_AUX
+     讀數: 1.83 V
+     狀態: OK
+
+[48] P_VCCD_HV_CPU0
+     讀數: 1.17 V
+     狀態: OK
+
+[49] P_VCCD_HV_CPU1
+     讀數: N/A V
+     狀態: N/A
+
+[50] P_VCCFA_EHV_CPU0
+     讀數: 1.813 V
+     狀態: OK
+

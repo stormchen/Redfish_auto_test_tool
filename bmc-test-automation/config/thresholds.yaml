@@ -1,13 +1,571 @@
+# BMC Sensor 閾值配置
+# 根據 GIGABYTE Redfish API Spec 定義的感應器監控閾值
+
 sensors:
-  - name: "Temperature Sensor 1"
+  # ==================== 風扇感應器 (Fan Sensors) ====================
+  BPB_FAN_1A:
+    name: "Backplane Fan 1A"
+    unit: "RPM"
+    type: "Fan"
+    min: 1000
+    max: 30000
+    warning_min: 2000
+    warning_max: 28000
+    critical_min: 500
+    critical_max: 32000
+    
+  BPB_FAN_1B:
+    name: "Backplane Fan 1B"
+    unit: "RPM"
+    type: "Fan"
+    min: 1000
+    max: 30000
+    warning_min: 2000
+    warning_max: 28000
+    critical_min: 500
+    critical_max: 32000
+    
+  BPB_FAN_2A:
+    name: "Backplane Fan 2A"
+    unit: "RPM"
+    type: "Fan"
+    min: 5000
+    max: 30000
+    warning_min: 8000
+    warning_max: 28000
+    critical_min: 3000
+    critical_max: 32000
+    
+  BPB_FAN_2B:
+    name: "Backplane Fan 2B"
+    unit: "RPM"
+    type: "Fan"
+    min: 5000
+    max: 30000
+    warning_min: 8000
+    warning_max: 28000
+    critical_min: 3000
+    critical_max: 32000
+    
+  BPB_FAN_3A:
+    name: "Backplane Fan 3A"
+    unit: "RPM"
+    type: "Fan"
+    min: 5000
+    max: 30000
+    warning_min: 8000
+    warning_max: 28000
+    critical_min: 3000
+    critical_max: 32000
+    
+  BPB_FAN_3B:
+    name: "Backplane Fan 3B"
+    unit: "RPM"
+    type: "Fan"
+    min: 5000
+    max: 30000
+    warning_min: 8000
+    warning_max: 28000
+    critical_min: 3000
+    critical_max: 32000
+    
+  BPB_FAN_4A:
+    name: "Backplane Fan 4A"
+    unit: "RPM"
+    type: "Fan"
+    min: 5000
+    max: 30000
+    warning_min: 8000
+    warning_max: 28000
+    critical_min: 3000
+    critical_max: 32000
+    
+  BPB_FAN_4B:
+    name: "Backplane Fan 4B"
+    unit: "RPM"
+    type: "Fan"
+    min: 5000
+    max: 30000
+    warning_min: 8000
+    warning_max: 28000
+    critical_min: 3000
+    critical_max: 32000
+    
+  BPB_FAN_5A:
+    name: "Backplane Fan 5A"
+    unit: "RPM"
+    type: "Fan"
+    min: 1000
+    max: 30000
+    warning_min: 2000
+    warning_max: 28000
+    critical_min: 500
+    critical_max: 32000
+    
+  BPB_FAN_5B:
+    name: "Backplane Fan 5B"
+    unit: "RPM"
+    type: "Fan"
+    min: 1000
+    max: 30000
+    warning_min: 2000
+    warning_max: 28000
+    critical_min: 500
+    critical_max: 32000
+    
+  BPB_FAN_6A:
+    name: "Backplane Fan 6A"
+    unit: "RPM"
+    type: "Fan"
+    min: 1000
+    max: 30000
+    warning_min: 2000
+    warning_max: 28000
+    critical_min: 500
+    critical_max: 32000
+    
+  BPB_FAN_6B:
+    name: "Backplane Fan 6B"
+    unit: "RPM"
+    type: "Fan"
+    min: 1000
+    max: 30000
+    warning_min: 2000
+    warning_max: 28000
+    critical_min: 500
+    critical_max: 32000
+    
+  BPB_FAN_7A:
+    name: "Backplane Fan 7A"
+    unit: "RPM"
+    type: "Fan"
+    min: 1000
+    max: 30000
+    warning_min: 2000
+    warning_max: 28000
+    critical_min: 500
+    critical_max: 32000
+    
+  BPB_FAN_7B:
+    name: "Backplane Fan 7B"
+    unit: "RPM"
+    type: "Fan"
+    min: 1000
+    max: 30000
+    warning_min: 2000
+    warning_max: 28000
+    critical_min: 500
+    critical_max: 32000
+    
+  BPB_FAN_8A:
+    name: "Backplane Fan 8A"
+    unit: "RPM"
+    type: "Fan"
+    min: 1000
+    max: 30000
+    warning_min: 2000
+    warning_max: 28000
+    critical_min: 500
+    critical_max: 32000
+    
+  BPB_FAN_8B:
+    name: "Backplane Fan 8B"
+    unit: "RPM"
+    type: "Fan"
+    min: 1000
+    max: 30000
+    warning_min: 2000
+    warning_max: 28000
+    critical_min: 500
+    critical_max: 32000
+    
+  GPU_FAN:
+    name: "GPU Fan"
+    unit: "RPM"
+    type: "Fan"
+    min: 2000
+    max: 15000
+    warning_min: 3000
+    warning_max: 14000
+    critical_min: 1000
+    critical_max: 16000
+
+  # ==================== CPU 溫度感應器 ====================
+  CPU0_DTS:
+    name: "CPU0 DTS"
+    unit: "Cel"
+    type: "Temperature"
+    min: 0
+    max: 100
+    warning_min: 5
+    warning_max: 85
+    critical_min: -10
+    critical_max: 105
+    
+  CPU0_TEMP:
+    name: "CPU0 Temperature"
+    unit: "Cel"
+    type: "Temperature"
+    min: 0
+    max: 100
+    warning_min: 10
+    warning_max: 80
+    critical_min: -10
+    critical_max: 105
+    
+  CPU1_DTS:
+    name: "CPU1 DTS"
+    unit: "Cel"
+    type: "Temperature"
+    min: 0
+    max: 100
+    warning_min: 5
+    warning_max: 85
+    critical_min: -10
+    critical_max: 105
+    optional: true
+    
+  CPU1_TEMP:
+    name: "CPU1 Temperature"
+    unit: "Cel"
+    type: "Temperature"
+    min: 0
+    max: 100
+    warning_min: 10
+    warning_max: 80
+    critical_min: -10
+    critical_max: 105
+    optional: true
+
+  # ==================== 記憶體溫度感應器 ====================
+  DIMMG0_TEMP:
+    name: "DIMM G0 Temperature"
+    unit: "Cel"
+    type: "Temperature"
+    min: 0
+    max: 90
+    warning_min: 5
+    warning_max: 75
+    critical_min: -5
+    critical_max: 95
+    optional: true
+    
+  DIMMG1_TEMP:
+    name: "DIMM G1 Temperature"
+    unit: "Cel"
+    type: "Temperature"
+    min: 0
+    max: 90
+    warning_min: 5
+    warning_max: 75
+    critical_min: -5
+    critical_max: 95
+    
+  DIMMG2_TEMP:
+    name: "DIMM G2 Temperature"
+    unit: "Cel"
+    type: "Temperature"
+    min: 0
+    max: 90
+    warning_min: 5
+    warning_max: 75
+    critical_min: -5
+    critical_max: 95
+    optional: true
+    
+  DIMMG3_TEMP:
+    name: "DIMM G3 Temperature"
+    unit: "Cel"
+    type: "Temperature"
+    min: 0
+    max: 90
+    warning_min: 5
+    warning_max: 75
+    critical_min: -5
+    critical_max: 95
+    optional: true
+
+  # ==================== 系統溫度感應器 ====================
+  INLET_AIR_TEMP:
+    name: "Inlet Air Temperature"
+    unit: "Cel"
+    type: "Temperature"
+    min: 0
+    max: 50
+    warning_min: 5
+    warning_max: 45
+    critical_min: -5
+    critical_max: 55
+    
+  MB_TEMP1:
+    name: "Motherboard Temperature 1"
+    unit: "Cel"
+    type: "Temperature"
+    min: 0
+    max: 100
+    warning_min: 10
+    warning_max: 75
+    critical_min: -10
+    critical_max: 105
+    
+  MB_TEMP2:
+    name: "Motherboard Temperature 2"
+    unit: "Cel"
+    type: "Temperature"
+    min: 0
+    max: 100
+    warning_min: 10
+    warning_max: 75
+    critical_min: -10
+    critical_max: 105
+    
+  PCH_TEMP:
+    name: "Platform Controller Hub Temperature"
+    unit: "Cel"
+    type: "Temperature"
+    min: 0
+    max: 100
+    warning_min: 10
+    warning_max: 80
+    critical_min: -10
+    critical_max: 105
+    
+  P0_EHV_FIVRA_TMP:
+    name: "CPU0 FIVRA Temperature"
+    unit: "Cel"
+    type: "Temperature"
+    min: 0
+    max: 100
+    warning_min: 10
+    warning_max: 85
+    critical_min: -10
+    critical_max: 105
+    
+  P1_EHV_FIVRA_TMP:
+    name: "CPU1 FIVRA Temperature"
+    unit: "Cel"
+    type: "Temperature"
+    min: 0
+    max: 100
+    warning_min: 10
+    warning_max: 85
+    critical_min: -10
+    critical_max: 105
+    optional: true
+    
+  PSU1_HOTSPOT:
+    name: "PSU1 Hotspot Temperature"
+    unit: "Cel"
+    type: "Temperature"
+    min: 0
+    max: 100
+    warning_min: 10
+    warning_max: 80
+    critical_min: -10
+    critical_max: 105
+    
+  PSU2_HOTSPOT:
+    name: "PSU2 Hotspot Temperature"
+    unit: "Cel"
+    type: "Temperature"
+    min: 0
+    max: 100
+    warning_min: 10
+    warning_max: 80
+    critical_min: -10
+    critical_max: 105
+
+  # ==================== NVMe 溫度感應器 ====================
+  NVMeG0_TEMP:
+    name: "NVMe G0 Temperature"
+    unit: "Cel"
     type: "Temperature"
     min: 0
     max: 80
-    boundary_min: 0
-    boundary_max: 80
-  - name: "Voltage Sensor 1"
+    warning_min: 5
+    warning_max: 70
+    critical_min: -5
+    critical_max: 85
+    optional: true
+    
+  NVMeG1_TEMP:
+    name: "NVMe G1 Temperature"
+    unit: "Cel"
+    type: "Temperature"
+    min: 0
+    max: 80
+    warning_min: 5
+    warning_max: 70
+    critical_min: -5
+    critical_max: 85
+    optional: true
+
+  # ==================== 電壓感應器 ====================
+  P12V:
+    name: "12V Power Rail"
+    unit: "V"
+    type: "Voltage"
+    min: 11.5
+    max: 13.0
+    warning_min: 11.6
+    warning_max: 12.9
+    critical_min: 11.0
+    critical_max: 13.5
+    
+  P3V3:
+    name: "3.3V Power Rail"
+    unit: "V"
+    type: "Voltage"
+    min: 3.0
+    max: 3.6
+    warning_min: 3.1
+    warning_max: 3.5
+    critical_min: 2.8
+    critical_max: 3.8
+    
+  P5V:
+    name: "5V Power Rail"
+    unit: "V"
+    type: "Voltage"
+    min: 4.7
+    max: 5.3
+    warning_min: 4.8
+    warning_max: 5.2
+    critical_min: 4.5
+    critical_max: 5.5
+    
+  P12V_S3:
+    name: "12V Standby Power Rail"
+    unit: "A"
+    type: "Current"
+    min: 0
+    max: 10
+    warning_min: 0
+    warning_max: 8
+    critical_min: -1
+    critical_max: 15
+    
+  P3V_BAT_R:
+    name: "3V Battery Rail"
+    unit: "V"
+    type: "Voltage"
+    min: 2.5
+    max: 3.5
+    warning_min: 2.7
+    warning_max: 3.3
+    critical_min: 2.0
+    critical_max: 4.0
+    
+  P_12V_AUX:
+    name: "12V Aux Power Rail"
+    unit: "V"
+    type: "Voltage"
+    min: 11.5
+    max: 13.0
+    warning_min: 11.6
+    warning_max: 12.9
+    critical_min: 11.0
+    critical_max: 13.5
+    
+  P_1V05_PCH:
+    name: "1.05V PCH Power Rail"
+    unit: "V"
+    type: "Voltage"
+    min: 0.9
+    max: 1.2
+    warning_min: 0.95
+    warning_max: 1.15
+    critical_min: 0.8
+    critical_max: 1.3
+    
+  P_1V8_PCH_AUX:
+    name: "1.8V PCH Aux Power Rail"
+    unit: "V"
+    type: "Voltage"
+    min: 1.6
+    max: 2.0
+    warning_min: 1.65
+    warning_max: 1.95
+    critical_min: 1.5
+    critical_max: 2.1
+    
+  P_VCCD_HV_CPU0:
+    name: "CPU0 VCCD HV Power Rail"
+    unit: "V"
     type: "Voltage"
     min: 1.0
-    max: 1.5
-    boundary_min: 1.0
-    boundary_max: 1.5
+    max: 1.3
+    warning_min: 1.05
+    warning_max: 1.25
+    critical_min: 0.9
+    critical_max: 1.4
+    
+  P_VCCD_HV_CPU1:
+    name: "CPU1 VCCD HV Power Rail"
+    unit: "V"
+    type: "Voltage"
+    min: 1.0
+    max: 1.3
+    warning_min: 1.05
+    warning_max: 1.25
+    critical_min: 0.9
+    critical_max: 1.4
+    optional: true
+    
+  P_VCCFA_EHV_CPU0:
+    name: "CPU0 VCCFA EHV Power Rail"
+    unit: "V"
+    type: "Voltage"
+    min: 1.6
+    max: 2.0
+    warning_min: 1.65
+    warning_max: 1.95
+    critical_min: 1.5
+    critical_max: 2.1
+
+  # ==================== 狀態感應器 ====================
+  CPU0_Status:
+    name: "CPU0 Status"
+    unit: "Status"
+    type: "Status"
+    min: 0
+    max: 100000
+    optional: true
+    
+  CPU1_Status:
+    name: "CPU1 Status"
+    unit: "Status"
+    type: "Status"
+    min: 0
+    max: 100000
+    optional: true
+    
+  PS1_Status:
+    name: "Power Supply 1 Status"
+    unit: "Status"
+    type: "Status"
+    min: 0
+    max: 100000
+    optional: true
+    
+  PS2_Status:
+    name: "Power Supply 2 Status"
+    unit: "Status"
+    type: "Status"
+    min: 0
+    max: 100000
+    optional: true
+
+# 測試邊界條件配置
+boundary_testing:
+  enabled: true
+  temperature_variance: 5  # 測試時的溫度變化容限
+  voltage_variance: 0.1    # 測試時的電壓變化容限
+  fan_variance: 500        # 測試時的風扇轉速變化容限
+
+# 警告等級定義
+severity_levels:
+  ok: 0
+  warning: 1
+  critical: 2
+  unknown: 3

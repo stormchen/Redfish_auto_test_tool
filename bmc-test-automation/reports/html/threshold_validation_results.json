@@ -1,0 +1,359 @@
+{
+  "ok": [
+    {
+      "sensor": "BPB_FAN_1A",
+      "reading": 6150,
+      "unit": "RPM",
+      "status": "ok",
+      "message": "Reading 6150.0 within acceptable range"
+    },
+    {
+      "sensor": "BPB_FAN_1B",
+      "reading": 5550,
+      "unit": "RPM",
+      "status": "ok",
+      "message": "Reading 5550.0 within acceptable range"
+    },
+    {
+      "sensor": "BPB_FAN_2A",
+      "reading": 23700,
+      "unit": "RPM",
+      "status": "ok",
+      "message": "Reading 23700.0 within acceptable range"
+    },
+    {
+      "sensor": "BPB_FAN_2B",
+      "reading": 20700,
+      "unit": "RPM",
+      "status": "ok",
+      "message": "Reading 20700.0 within acceptable range"
+    },
+    {
+      "sensor": "BPB_FAN_3A",
+      "reading": 23850,
+      "unit": "RPM",
+      "status": "ok",
+      "message": "Reading 23850.0 within acceptable range"
+    },
+    {
+      "sensor": "BPB_FAN_3B",
+      "reading": 20700,
+      "unit": "RPM",
+      "status": "ok",
+      "message": "Reading 20700.0 within acceptable range"
+    },
+    {
+      "sensor": "BPB_FAN_4A",
+      "reading": 23850,
+      "unit": "RPM",
+      "status": "ok",
+      "message": "Reading 23850.0 within acceptable range"
+    },
+    {
+      "sensor": "BPB_FAN_4B",
+      "reading": 21000,
+      "unit": "RPM",
+      "status": "ok",
+      "message": "Reading 21000.0 within acceptable range"
+    },
+    {
+      "sensor": "BPB_FAN_5A",
+      "reading": 4800,
+      "unit": "RPM",
+      "status": "ok",
+      "message": "Reading 4800.0 within acceptable range"
+    },
+    {
+      "sensor": "BPB_FAN_5B",
+      "reading": 4200,
+      "unit": "RPM",
+      "status": "ok",
+      "message": "Reading 4200.0 within acceptable range"
+    },
+    {
+      "sensor": "BPB_FAN_6A",
+      "reading": 4650,
+      "unit": "RPM",
+      "status": "ok",
+      "message": "Reading 4650.0 within acceptable range"
+    },
+    {
+      "sensor": "BPB_FAN_6B",
+      "reading": 4200,
+      "unit": "RPM",
+      "status": "ok",
+      "message": "Reading 4200.0 within acceptable range"
+    },
+    {
+      "sensor": "BPB_FAN_7A",
+      "reading": 4800,
+      "unit": "RPM",
+      "status": "ok",
+      "message": "Reading 4800.0 within acceptable range"
+    },
+    {
+      "sensor": "BPB_FAN_7B",
+      "reading": 4050,
+      "unit": "RPM",
+      "status": "ok",
+      "message": "Reading 4050.0 within acceptable range"
+    },
+    {
+      "sensor": "BPB_FAN_8A",
+      "reading": 4800,
+      "unit": "RPM",
+      "status": "ok",
+      "message": "Reading 4800.0 within acceptable range"
+    },
+    {
+      "sensor": "BPB_FAN_8B",
+      "reading": 4050,
+      "unit": "RPM",
+      "status": "ok",
+      "message": "Reading 4050.0 within acceptable range"
+    },
+    {
+      "sensor": "CPU0_DTS",
+      "reading": 22,
+      "unit": "Cel",
+      "status": "ok",
+      "message": "Reading 22.0 within acceptable range"
+    },
+    {
+      "sensor": "CPU0_TEMP",
+      "reading": 69,
+      "unit": "Cel",
+      "status": "ok",
+      "message": "Reading 69.0 within acceptable range"
+    },
+    {
+      "sensor": "DIMMG1_TEMP",
+      "reading": 37,
+      "unit": "Cel",
+      "status": "ok",
+      "message": "Reading 37.0 within acceptable range"
+    },
+    {
+      "sensor": "GPU_FAN",
+      "reading": 8100,
+      "unit": "RPM",
+      "status": "ok",
+      "message": "Reading 8100.0 within acceptable range"
+    },
+    {
+      "sensor": "INLET_AIR_TEMP",
+      "reading": 29,
+      "unit": "Cel",
+      "status": "ok",
+      "message": "Reading 29.0 within acceptable range"
+    },
+    {
+      "sensor": "MB_TEMP1",
+      "reading": 41,
+      "unit": "Cel",
+      "status": "ok",
+      "message": "Reading 41.0 within acceptable range"
+    },
+    {
+      "sensor": "MB_TEMP2",
+      "reading": 34,
+      "unit": "Cel",
+      "status": "ok",
+      "message": "Reading 34.0 within acceptable range"
+    },
+    {
+      "sensor": "P0_EHV_FIVRA_TMP",
+      "reading": 45,
+      "unit": "Cel",
+      "status": "ok",
+      "message": "Reading 45.0 within acceptable range"
+    },
+    {
+      "sensor": "P12V",
+      "reading": 12.74,
+      "unit": "V",
+      "status": "ok",
+      "message": "Reading 12.74 within acceptable range"
+    },
+    {
+      "sensor": "P12V_S3",
+      "reading": 0,
+      "unit": "A",
+      "status": "ok",
+      "message": "Reading 0.0 within acceptable range"
+    },
+    {
+      "sensor": "P3V3",
+      "reading": 3.3124,
+      "unit": "V",
+      "status": "ok",
+      "message": "Reading 3.3124 within acceptable range"
+    },
+    {
+      "sensor": "P3V_BAT_R",
+      "reading": 3.1058,
+      "unit": "V",
+      "status": "ok",
+      "message": "Reading 3.1058 within acceptable range"
+    },
+    {
+      "sensor": "P5V",
+      "reading": 5.0629,
+      "unit": "V",
+      "status": "ok",
+      "message": "Reading 5.0629 within acceptable range"
+    },
+    {
+      "sensor": "PCH_TEMP",
+      "reading": 47,
+      "unit": "Cel",
+      "status": "ok",
+      "message": "Reading 47.0 within acceptable range"
+    },
+    {
+      "sensor": "PS1_Status",
+      "reading": 32769,
+      "unit": "N/A",
+      "status": "ok",
+      "message": "Reading 32769.0 within acceptable range"
+    },
+    {
+      "sensor": "PS2_Status",
+      "reading": 32905,
+      "unit": "N/A",
+      "status": "ok",
+      "message": "Reading 32905.0 within acceptable range"
+    },
+    {
+      "sensor": "PSU1_HOTSPOT",
+      "reading": 41,
+      "unit": "Cel",
+      "status": "ok",
+      "message": "Reading 41.0 within acceptable range"
+    },
+    {
+      "sensor": "PSU2_HOTSPOT",
+      "reading": 32,
+      "unit": "Cel",
+      "status": "ok",
+      "message": "Reading 32.0 within acceptable range"
+    },
+    {
+      "sensor": "P_12V_AUX",
+      "reading": 12.74,
+      "unit": "V",
+      "status": "ok",
+      "message": "Reading 12.74 within acceptable range"
+    },
+    {
+      "sensor": "P_1V05_PCH",
+      "reading": 1.07,
+      "unit": "V",
+      "status": "ok",
+      "message": "Reading 1.07 within acceptable range"
+    },
+    {
+      "sensor": "P_1V8_PCH_AUX",
+      "reading": 1.83,
+      "unit": "V",
+      "status": "ok",
+      "message": "Reading 1.83 within acceptable range"
+    },
+    {
+      "sensor": "P_VCCD_HV_CPU0",
+      "reading": 1.17,
+      "unit": "V",
+      "status": "ok",
+      "message": "Reading 1.17 within acceptable range"
+    },
+    {
+      "sensor": "P_VCCFA_EHV_CPU0",
+      "reading": 1.813,
+      "unit": "V",
+      "status": "ok",
+      "message": "Reading 1.813 within acceptable range"
+    }
+  ],
+  "warning": [],
+  "critical": [],
+  "unknown": [
+    {
+      "sensor": "CPU0_Status",
+      "reading": null,
+      "unit": "N/A",
+      "status": "unknown",
+      "message": "No reading available"
+    },
+    {
+      "sensor": "CPU1_DTS",
+      "reading": null,
+      "unit": "Cel",
+      "status": "unknown",
+      "message": "No reading available"
+    },
+    {
+      "sensor": "CPU1_Status",
+      "reading": null,
+      "unit": "N/A",
+      "status": "unknown",
+      "message": "No reading available"
+    },
+    {
+      "sensor": "CPU1_TEMP",
+      "reading": null,
+      "unit": "Cel",
+      "status": "unknown",
+      "message": "No reading available"
+    },
+    {
+      "sensor": "DIMMG0_TEMP",
+      "reading": null,
+      "unit": "Cel",
+      "status": "unknown",
+      "message": "No reading available"
+    },
+    {
+      "sensor": "DIMMG2_TEMP",
+      "reading": null,
+      "unit": "Cel",
+      "status": "unknown",
+      "message": "No reading available"
+    },
+    {
+      "sensor": "DIMMG3_TEMP",
+      "reading": null,
+      "unit": "Cel",
+      "status": "unknown",
+      "message": "No reading available"
+    },
+    {
+      "sensor": "NVMeG0_TEMP",
+      "reading": null,
+      "unit": "Cel",
+      "status": "unknown",
+      "message": "No reading available"
+    },
+    {
+      "sensor": "NVMeG1_TEMP",
+      "reading": null,
+      "unit": "Cel",
+      "status": "unknown",
+      "message": "No reading available"
+    },
+    {
+      "sensor": "P1_EHV_FIVRA_TMP",
+      "reading": null,
+      "unit": "Cel",
+      "status": "unknown",
+      "message": "No reading available"
+    },
+    {
+      "sensor": "P_VCCD_HV_CPU1",
+      "reading": null,
+      "unit": "V",
+      "status": "unknown",
+      "message": "No reading available"
+    }
+  ],
+  "not_configured": []
+}
