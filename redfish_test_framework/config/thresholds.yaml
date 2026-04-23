@@ -1,0 +1,14 @@
+# Example threshold configuration for Redfish sensor tests
+# Format: sensor_name: {upper_limit: value, lower_limit: value}
+
+temperature_sensor:
+  upper_limit: 70.0
+  lower_limit: 10.0
+
+voltage_sensor:
+  upper_limit: 12.5
+  lower_limit: 11.5
+
+fan_speed_sensor:
+  upper_limit: 3000.0
+  lower_limit: 500.0

@@ -1,0 +1,18 @@
+# Redfish Test Framework Requirements
+
+# Core testing framework
+pytest>=6.0.0
+pytest-html>=3.0.0
+pytest-loguru>=0.6.0
+
+# HTTP client for Redfish
+requests>=2.25.0
+
+# Utilities
+PyYAML>=5.4.0
+jsonschema>=3.2.0
+rich>=10.0.0
+tqdm>=4.0.0
+
+# PDF generation (optional, for report generation)
+weasyprint>=50.0.0

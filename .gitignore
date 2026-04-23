@@ -1,0 +1,36 @@
+# Byte-compiled Python files
+*.pyc
+*.pyo
+*.pyd
+*.pyi
+
+# Distribution files
+*.egg-info
+*.egg
+
+# Virtual environments
+.env
+.venv/
+venv/*
+venv/**/*
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS-specific files
+.DS_Store
+*.tmp
+
+# Test reports
+reports/

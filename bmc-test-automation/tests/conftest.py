@@ -15,7 +15,7 @@ from client import RedfishClient
 
 # 配置日誌
 logging.basicConfig(
-    level=logging.INFO,
+    level=logging.WARNING,  # 改為WARNING以減少輸出
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
@@ -188,12 +188,9 @@ def log_test_start_end(request):
     """
     自動為每個測試記錄開始和結束日誌
     """
-    logger.info(f"{'='*60}")
     logger.info(f"Starting: {request.node.name}")
-    logger.info(f"{'='*60}")
     
     yield
     
     logger.info(f"Completed: {request.node.name}")
-    logger.info(f"{'='*60}\n")
 

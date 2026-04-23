@@ -78,13 +78,13 @@ class TestSensorThresholds:
             validation_results[status].append(result)
             
             # 記錄詳細信息
-            log_message = f"  [{sensor_name}] {sensor_reading} {sensor_unit} -> {status.upper()}"
-            if status == 'critical':
-                logger.error(log_message + f" ({message})")
-            elif status == 'warning':
-                logger.warning(log_message + f" ({message})")
-            else:
-                logger.debug(log_message)
+            if status in ['critical', 'warning']:
+                log_message = f"  [{sensor_name}] {sensor_reading} {sensor_unit} -> {status.upper()}"
+                if status == 'critical':
+                    logger.error(log_message + f" ({message})")
+                elif status == 'warning':
+                    logger.warning(log_message + f" ({message})")
+            # 正常狀態不記錄詳細日誌
         
         # 輸出統計
         logger.info(f"\nValidation Results Summary:")
