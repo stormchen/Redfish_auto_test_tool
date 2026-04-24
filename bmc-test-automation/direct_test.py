@@ -4,7 +4,9 @@
 """
 import sys
 import os
+import argparse
 import requests
+from dotenv import load_dotenv
 import urllib3
 import json
 import time
@@ -12,12 +14,12 @@ import time
 # 關閉 SSL 警告
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-def test_bmc_connection():
+def test_bmc_connection(bmc_url=None, username=None, password=None):
     """測試 BMC 直接連線"""
-    # BMC 設定
-    BMC_URL = "https://192.168.100.60"
-    USERNAME = "admin"
-    PASSWORD = "password"
+    # BMC 設定 (優先順序: 參數傳入 > 環境變數 > 預設值)
+    BMC_URL = bmc_url or os.getenv("BMC_URL", "https://192.168.100.60")
+    USERNAME = username or os.getenv("BMC_USERNAME", "admin")
+    PASSWORD = password or os.getenv("BMC_PASSWORD", "password")
     
     # 初始化變數用於 finally 塊中使用
     session = None
@@ -185,13 +187,23 @@ def test_bmc_connection():
 
 def main():
     """主函數"""
+    # 載入 .env 檔案
+    load_dotenv()
+    
+    # 設定命令列參數解析
+    parser = argparse.ArgumentParser(description='BMC 直接連線測試腳本')
+    parser.add_argument('--url', type=str, help='BMC URL (例如: https://192.168.100.60)')
+    parser.add_argument('--user', type=str, help='BMC 帳號')
+    parser.add_argument('--password', type=str, help='BMC 密碼')
+    args = parser.parse_args()
+
     print("執行 BMC 測試，將控制連線數量不超過 15 個且每次連線間加入延遲")
     
     # 控制連線數量不超過 15 個
     max_connections = 15
     
     # 執行測試
-    success = test_bmc_connection()
+    success = test_bmc_connection(bmc_url=args.url, username=args.user, password=args.password)
     
     # 加入較長延遲
     if success:

@@ -8,6 +8,10 @@ import yaml
 import logging
 import sys
 from pathlib import Path
+from dotenv import load_dotenv
+
+# 載入專案根目錄的 .env 檔案
+load_dotenv(Path(__file__).parent.parent / '.env')
 
 # 導入 RedfishClient
 sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
@@ -24,7 +28,9 @@ logger = logging.getLogger(__name__)
 @pytest.fixture(scope="session")
 def target_ip():
     """取得目標 BMC IP 地址"""
-    ip = os.getenv('BMC_IP', '192.168.100.60')
+    # 兼容 BMC_URL (去掉 https://) 或 BMC_IP
+    url_or_ip = os.getenv('BMC_URL', os.getenv('BMC_IP', '192.168.100.60'))
+    ip = url_or_ip.replace('https://', '').replace('http://', '').strip('/')
     logger.info(f"Target BMC IP: {ip}")
     return ip
 

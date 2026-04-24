@@ -60,7 +60,7 @@ class TestAIServerCoolingAndPower:
         
         try:
             # 獲取目前設定
-            resp = bmc_client.client.get(power_url)
+            resp = bmc_client.get(power_url)
             if resp.status_code != 200:
                 pytest.skip("Power Control not supported or not accessible.")
                 
@@ -76,7 +76,7 @@ class TestAIServerCoolingAndPower:
             }
             
             # 使用 PATCH 進行修改
-            patch_resp = bmc_client.client.patch(power_url, json=invalid_power_payload)
+            patch_resp = bmc_client.patch(power_url, json=invalid_power_payload)
             
             # 現實查核: 系統必須拒絕這個不合理的設定 (通常回傳 400 Bad Request)
             assert patch_resp.status_code in [400, 422], f"BMC accepted invalid power limit! Status: {patch_resp.status_code}"

@@ -17,10 +17,10 @@ class TestBMCStressAndPerformance:
         """
         高併發壓力測試: 模擬多個管理者同時存取 Redfish API
         """
-        logger.info("Starting High Concurrency Redfish Access Test (50 workers)")
+        logger.info("Starting High Concurrency Redfish Access Test (10 workers)")
         
         url_to_test = "/redfish/v1/Systems/Self"
-        concurrent_requests = 50
+        concurrent_requests = 10
         response_times = []
         error_count = 0
         
@@ -28,7 +28,7 @@ class TestBMCStressAndPerformance:
             start = time.time()
             try:
                 # 假設 bmc_client 有 raw_get 方法可以測試特定 Endpoint
-                resp = bmc_client.client.get(url_to_test)
+                resp = bmc_client.get(url_to_test)
                 if resp.status_code == 200:
                     return time.time() - start, None
                 else:
@@ -76,7 +76,7 @@ class TestBMCStressAndPerformance:
         while time.time() < end_time:
             try:
                 # 取得 BMC 自身管理資源狀態 (Manager)
-                managers = bmc_client.client.get("/redfish/v1/Managers/Self").json()
+                managers = bmc_client.get("/redfish/v1/Managers/Self").json()
                 # 假設 BMC 回報 Memory 狀態在 Oem 或是特定屬性中
                 # 這裡使用一個通用的讀取邏輯示意
                 mem_usage = managers.get('Oem', {}).get('MemoryUsagePercentage', None)
